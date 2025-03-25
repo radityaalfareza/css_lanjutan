@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+        }
+
+        .item1 {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            grid-column: 1/6;
+        }
+
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <div>
+        <p>Skenario 1:  Dengan menambahkan properti grid-row: 1 / 4;, elemen dengan class item1 membentang dari baris pertama hingga baris keempat, sehingga ukurannya lebih besar secara vertikal dibanding elemen lainnya.</p>
+        <p>Skenario 2: Dengan menambahkan properti grid-column: 1 / 6;, elemen yang menerapkan aturan ini akan membentang secara horizontal dari kolom pertama hingga kolom keempat </p>
+    </div>
+</body>
+

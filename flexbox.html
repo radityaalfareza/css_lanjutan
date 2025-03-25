@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            display: flex;
+            background-color:#ffae00;
+            padding: 60px;
+            text-align: center;
+            color: white;
+            flex-flow: row wrap;    
+            justify-content: center;     
+        }
+        .wadah_flex > div {
+            background-color: darkblue;
+            margin: 10px;
+            padding: 60px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <div>
+        <p> Skenario 1: background-color memberikan warna di belakang angka</p>
+        <P> Skenario 2: Mengatur style yang ada pada div angka, hasilnya dibelakang angka terdapat background, mengatur marginya, paddingnya, dan ukuran fontnya</P>
+        <p>Skenario 3:div bertambah menjadi 12. Mencoba Macam-macam flex direction adalah row, row-reverse, column, dan column-reverse.
+        Row: Nilai default yang menampilkan item secara horizontal dari kiri ke kanan
+        Row-reverse: Item ditampilkan secara horizontal dari kanan ke kiri
+        Column: Item ditampilkan secara vertikal dari atas ke bawah
+        Column-reverse: Item ditampilkan secara vertikal dari bawah ke atas </p>
+        <p>Skenario 4: mengubah flex-direction menjadi flex-wrap. mencoba macam-macam flex wrap: nowrap: Nilai default yang membuat item flex selalu berada di baris yang sama.
+        wrap: Memungkinkan item flex dibungkus ke baris baru jika tidak ada cukup ruang di baris pertama.
+        wrap-reverse: Memungkinkan item flex berpindah ke baris baru di atas baris pertama.</p>
+        <p>Skenario 5: Flex-wrap adalah bagian dari flex-flow, yang merupakan properti CSS flexbox. Flex-flow menggabungkan properti flex-wrap dan flex-direction menjadi satu baris kode. </p>
+        <p>Skenario 6: mencoba berbagai macam justify content. saya menggunakan center berarti content akan memiliki posisi ditengah </p>
+
+    </div>
+</body>
+</html>
